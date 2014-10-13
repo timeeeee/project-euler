@@ -6,4 +6,4 @@ fibonacci max = listTo max [1,1] where
                              then a:b:list
                              else listTo max ((a + b):a:b:list)
                                   
--- sum (filter even (fibonacci 4000000)) = 4613732
+main = print (sum (filter even (fibonacci 4000000)))
