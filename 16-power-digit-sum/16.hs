@@ -14,6 +14,11 @@ carry [] = [1]
 
 -- find the sum of the digits of 2^n
 sumOfDigits :: Int -> Int
-sumOfDigits n = sum $ iterate doubleList[1] !! n
+sumOfDigits n = sum $ iterate doubleList [1] !! n
 
 main = print $ sumOfDigits 1000
+
+-- cheating solution:
+--   import Data.Char
+--   sumOfDigits = sum . map digitToInt . show . (2 ^)
+--   main = print $ sumOfDigits 1000
