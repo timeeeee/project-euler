@@ -1,9 +1,12 @@
-#temp files
+# temp files
 *~
 \#*\#
 
-#compiled python files
-*pyc
+# compiled python files
+*.pyc
 
-#object files
-*o
+# object files
+*.o
+
+# haskell interface files
+*.hi
