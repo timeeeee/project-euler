@@ -1,8 +1,8 @@
-cpp15: 15.cpp
-	g++ -o cpp15 15.cpp
+cpp15: dynamic.cpp
+	g++ -o dynamic dynamic.cpp
 
 haskell15: 15.hs
 	ghc 15.hs -o haskell15
 
 clean:
-	rm -f *.o *.hi *~ haskell15 cpp15
+	rm -f *.o *.hi *~ haskell15 dynamic
