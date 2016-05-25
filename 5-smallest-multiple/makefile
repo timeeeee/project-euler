@@ -1,10 +1,10 @@
-all: five-haskell five-cpp
+all: haskell cpp
 
-five-haskell: 5.hs
-	ghc 5.hs -o five-haskell
+haskell: main.hs
+	ghc main.hs -o haskell
 
-five-cpp: 5.cpp
-	g++ 5.cpp -o five-cpp
+cpp: main.cpp
+	g++ main.cpp -o cpp
 
 clean:
-	rm -f *.o *.hi *~ five-haskell five-cpp
+	rm -f *.o *.hi *~ haskell cpp

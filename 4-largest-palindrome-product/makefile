@@ -1,5 +1,5 @@
-all: 4.hs
-	ghc -o four-haskell 4.hs
+all: main.hs
+	ghc -o haskell main.hs
 
 clean:
-	rm -f *.o *.hi *~ four-haskell
+	rm -f *.o *.hi *~ haskell

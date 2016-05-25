@@ -1,10 +1,10 @@
 all: haskell cpp
 
-haskell: 1.hs
-	ghc -o haskell1 1.hs
+haskell: main.hs
+	ghc -o haskell main.hs
 
-cpp: 1.cpp
-	g++ -o cpp1 1.cpp
+cpp: main.cpp
+	g++ -o cpp main.cpp
 
 clean:
-	rm -f *.o *.hi *~ haskell1 cpp1
+	rm -f *.o *.hi *~ haskell cpp

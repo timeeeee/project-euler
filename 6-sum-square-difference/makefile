@@ -1,5 +1,5 @@
-all: 6.hs
-	ghc -o six-haskell 6.hs
+all: main.hs
+	ghc -o haskell main.hs
 
 clean:
-	rm -f *.o *.hi *~ six-haskell
+	rm -f *.o *.hi *~ haskell
