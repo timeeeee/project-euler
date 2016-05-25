@@ -17,4 +17,4 @@ def pathsTo(grid, x, y):
         return paths
 
 if __name__ == "__main__":
-    print pathsNxN(16)
+    print pathsNxN(20)
