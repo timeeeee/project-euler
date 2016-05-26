@@ -1,10 +1,10 @@
 all: haskell cpp
 
-haskell: 3.hs
-	ghc -o haskell3 3.hs
+haskell: main.hs
+	ghc -o haskell main.hs
 
-cpp: 3.cpp
-	g++ -o cpp3 3.cpp
+cpp: main.cpp
+	g++ -o cpp main.cpp
 
 clean:
-	rm -f *.o *.hi *~ haskell3 cpp3
+	rm -f *.o *.hi *~ haskell cpp
