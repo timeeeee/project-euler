@@ -1,9 +1,12 @@
 -- find sum of even fibonacci numbers less than 4 million
 
-fibonacci :: Int -> [Int]
-fibonacci max = listTo max [1,1] where
-  listTo max (a:b:list) = if (a + b >= max)
-                             then a:b:list
-                             else listTo max ((a + b):a:b:list)
+fib_iter :: Int -> Int -> Int -> Int
+fib_iter a b 0 = b
+fib_iter a b count = fib_iter b (a + b) (count - 1)
+
+fib :: Int -> Int
+fib n = fib_iter 0 1 n
                                   
-main = print (sum (filter even (fibonacci 4000000)))
+fibs = map fib [0..]
+
+main = print $ sum $ filter even $ takeWhile (< 4000000) fibs
